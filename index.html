@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Juego Interactivo</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+    <h1>Desafío Exprés</h1>
+    <p>¡Pon a prueba tus reflejos en este minijuego interactivo!</p>
+</header>
+
+<section id="user-setup">
+    <h2>Antes de comenzar</h2>
+    <form id="user-form">
+        <label for="username">Ingresa tu nombre:</label>
+        <input type="text" id="username" name="username" required />
+        <button type="submit">Comenzar juego</button>
+    </form>
+</section>
+
+<main id="game-area" class="hidden">
+    <h2>Zona de Juego</h2>
+    <div id="game-info">
+        <p><strong>Jugador:</strong> <span id="player-name"></span></p>
+        <p><strong>Puntuación:</strong> <span id="score">0</span></p>
+        <p><strong>Tiempo:</strong> <span id="time">60</span> s</p>
+    </div>
+    <div id="game-content">
+        <button id="action-button">Haz clic rápido</button>
+    </div>
+    <button id="restart-button" class="hidden">Reiniciar</button>
+</main>
+
+<footer>
+    <p>Diseñado por <strong>TuNombre</strong>. 🌐 <em>Descubre más pronto...</em></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
